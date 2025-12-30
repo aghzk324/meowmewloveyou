@@ -1,159 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mini diary</title>
-        <link rel="shortcut icon" href="https://64.media.tumblr.com/c19c078a55bdc404b307a8c4d8fbc646/a53fbf7d829b7211-2d/s400x600/8155cd536f961a3f834bebf5181e7d869cf7906f.pnj">
-        <meta name="author" content="[Chloe]">
-        <meta name="description" content="[write about website]">
-        <link href="style.css" rel="stylesheet" type="text/css" media="all">
-    </head>
-    <body>
-    <header>
-        <h1>₊Safezone</h1>
-        <img src="https://64.media.tumblr.com/2a785fbff337bd1b16f122369e558baf/6fd741a869195e77-ee/s250x400/8389c870a4e16abd33c1745b05f79eff5c9f5a7a.pnj" style="width:170px;height:150px;display:block;float: right;">
-        <img src="https://64.media.tumblr.com/c9b523245cd4f77f22ad80ef7656c08d/6fd741a869195e77-5a/s250x400/c0a118b25fb80d50b25f077d202eda4700c22600.pnj" style="width:170px;height:150px;display:block;float: left;">
-        <img src="https://64.media.tumblr.com/898901940ed7783c6ce7488797fcea2d/tumblr_nr3c37663o1u9ppplo1_1280.pnj" style="width:600px;height:80px;display:block;float: left;">
-    </header>
-        
-    <nav>
-        <ul>
-        <li><a href="index.html">Home ❤︎</a></li>
-        <li><a href="https://meowmewloveyou.neocities.org/Link1" target="_blank">♡ Blogs</a></li>
-        <li><a href="https://meowmewloveyou.neocities.org/Gallery" target="_blank">•⩊•Gallery</a></li>
-        <li><a href="#link3" target="_blank">⋆˚Music</a></li>
-        </ul>
-    </nav>
-        
-    <div id="content">
-        
-    <div id="sidebar">
-        <div id="avatar">
-            <img src="images/icon.png" alt="my icon!"> 
-        </div>
-        
-        <div id="bio">
-            <p>Hii, this is L!!₍^. .^₎⟆ </p>
-             <p>❤︎Welcome❤︎</p>
-             <p>𖹭 Favorite: Bánh đa cua.
-            <p>𖹭 Dislikes: sweets, being rude.</p>
-          
-        </div>
-        <img src="https://64.media.tumblr.com/af1d4a9820bf2e53c8c6a4fae246e1b4/c9b277743dd1a460-76/s540x810/10b3061a298f480102e7e68b351abed2030a3824.gifv" style="width:310px;height:20px;display:block;float:center;">
-        
-        <img src="https://64.media.tumblr.com/55368d176f0db10b995865ca7e4bad62/0417c0723648057d-7d/s250x400/0ea7bbb361cabe9f0cb238e5b274c21c42bcba4d.gifv" style="width:300px;display:block;float:center;">
-        
-        <img src="https://64.media.tumblr.com/af1d4a9820bf2e53c8c6a4fae246e1b4/c9b277743dd1a460-76/s540x810/10b3061a298f480102e7e68b351abed2030a3824.gifv" style="width:310px;height:20px;display:block;float:center;">
-        
-        <img src="https://64.media.tumblr.com/9752cbe9d9ea802e86ffdf0a5b155021/b7d445bae169e826-c8/s400x600/6256124aa3c70d89077b104722bc76f3ea795d0b.gifv" style="width:310px;display:block;float:top left;">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>login ✿</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=DotGothic16&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --lav:#d9ccff;
+  --mint:#c8f3d2;
+  --ink:#3b2f5f;
+  --dot:#b497ff;
+  --shadow:0 18px 40px rgba(70,40,120,.18);
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  min-height:100vh;
+  display:grid;
+  place-items:center;
+  font-family:"Quicksand",sans-serif;
+  background:
+    radial-gradient(circle at 20% 20%, #ffffffaa 0 10%, transparent 11%),
+    radial-gradient(circle at 80% 30%, #ffffffaa 0 9%, transparent 10%),
+    linear-gradient(180deg,#e6f6ff,#f8f2ff,#fff7f2);
+  color:var(--ink);
+}
+
+.login-box{
+  width:min(360px,92vw);
+  background:linear-gradient(180deg,#ffffffee,#fff7ff);
+  border-radius:22px;
+  box-shadow:var(--shadow);
+  padding:26px 22px 24px;
+  position:relative;
+}
+
+.login-box::before{
+  content:"";
+  position:absolute;
+  inset:14px;
+  border-radius:18px;
+  border:3px dotted var(--dot);
+  pointer-events:none;
+}
+
+.inner{
+  position:relative;
+  z-index:1;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+}
+
+.title{
+  align-self:center;
+  background:linear-gradient(180deg,var(--mint),#e8ffe9);
+  padding:10px 16px;
+  border-radius:14px;
+  font-family:"DotGothic16",monospace;
+  font-size:22px;
+  box-shadow:0 8px 0 rgba(100,200,140,.25);
+}
+
+input{
+  width:100%;
+  padding:12px 14px;
+  border-radius:14px;
+  border:2px solid rgba(60,40,100,.12);
+  background:#fff;
+  font-size:15px;
+  outline:none;
+}
+
+input:focus{ border-color:#b497ff; }
+
+.btn{
+  margin-top:6px;
+  padding:12px;
+  border-radius:14px;
+  border:none;
+  background:linear-gradient(180deg,var(--lav),#bda8ff);
+  color:#2f255c;
+  font-weight:700;
+  cursor:pointer;
+  box-shadow:0 10px 0 rgba(120,90,200,.25);
+}
+.btn:active{
+  transform:translateY(2px);
+  box-shadow:0 6px 0 rgba(120,90,200,.25);
+}
+
+.status{
+  min-height:18px;
+  font-size:13px;
+  text-align:center;
+}
+.status.err{color:#b0305c}
+.status.ok{color:#2e7a4a}
+
+/* MODAL */
+.modal{
+  position:fixed;
+  inset:0;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:18px;
+  background:rgba(50,30,90,.35);
+  z-index:9999; /* <- important: always above card */
+}
+
+.modal-box{
+  width:min(320px,90vw);
+  background:linear-gradient(180deg,#ffffffee,#fff7ff);
+  border-radius:20px;
+  padding:18px;
+  box-shadow:var(--shadow);
+  position:relative;
+}
+
+.modal-box::before{
+  content:"";
+  position:absolute;
+  inset:12px;
+  border-radius:16px;
+  border:3px dotted var(--dot);
+  pointer-events:none;
+}
+
+.modal-inner{
+  position:relative;
+  z-index:1;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  text-align:center;
+}
+
+.modal-title{
+  font-family:"DotGothic16",monospace;
+  font-size:20px;
+  background:linear-gradient(180deg,var(--mint),#e8ffe9);
+  border-radius:14px;
+  padding:10px 12px;
+  box-shadow:0 8px 0 rgba(100,200,140,.25);
+}
+
+.modal-actions{
+  display:flex;
+  gap:10px;
+  margin-top:4px;
+}
+
+.modal-btn{
+  flex:1;
+  padding:12px;
+  border-radius:14px;
+  border:none;
+  cursor:pointer;
+  font-weight:700;
+  box-shadow:0 10px 0 rgba(120,90,200,.25);
+  background:linear-gradient(180deg,var(--lav),#bda8ff);
+  color:#2f255c;
+}
+.modal-btn.secondary{
+  background:linear-gradient(180deg,var(--mint),#9feab4);
+  box-shadow:0 10px 0 rgba(100,200,140,.25);
+}
+.modal-btn:active{
+  transform:translateY(2px);
+  box-shadow:0 6px 0 rgba(120,90,200,.25);
+}
+.modal-btn.secondary:active{
+  box-shadow:0 6px 0 rgba(100,200,140,.25);
+}
+</style>
+</head>
+
+<body>
+
+<div class="login-box">
+  <div class="inner">
+    <div class="title">login ✿</div>
+
+    <input id="uid" placeholder="ID" autocomplete="off" />
+    <input id="pwd" type="password" placeholder="Password" autocomplete="off" />
+
+    <button class="btn" id="loginBtn">enter</button>
+    <div id="status" class="status"></div>
+  </div>
+</div>
+
+<div class="modal" id="trustModal" role="dialog" aria-modal="true">
+  <div class="modal-box">
+    <div class="modal-inner">
+      <div class="modal-title">Trust this device? ♡</div>
+      <div class="modal-actions">
+        <button class="modal-btn secondary" id="trustYes" type="button">yes</button>
+        <button class="modal-btn" id="trustNo" type="button">no</button>
+      </div>
     </div>
-        
-    <main>
-        
-        <h1>About this page<3!°❀⋆.ೃ࿔*:･</h1>
-        <p>.☘︎ memory fragments all the way from the start!</p>
-        <p>Will include every single weird ahh momento up here so stay updated!! <br>( ˶˘ ³˘)♡</p>
-        
-        
-        <h1>Wall of contents°❀⋆.ೃ࿔*:･</h1>
-        <div class="img-right">
-            <img src="images/drop.png" alt="a photo of me">
-        </div>
-        <p>Here's a closer look for everything up here, very exciting ♡ྀི ₊</p>
-        <p>Remember to check out every of them!</p>
-        <h4>WALL OF CONTENTS:</h4>
-        <ul>
-        <li><h3>Home page</h3></li> 
-        <li><h3>Daily blogs</h3></li>
-        <li><h3>Lovely gallery</h3></li>
-        <li><h3>Links for music</h3></li>
-        </ul>
-        <p><h4>P/s: Will be update for more occasionally!!!✧˖°.(⸝⸝ᵕᴗᵕ⸝⸝)</p></h4>
-        <h2>SMOL CREDITS°❀⋆.ೃ࿔*:･</h2>
-        <p>Made w love!</p>
-        <p>Let's make this place into a little hideout ৻( •̀ ᗜ •́ ৻)!!</p>
-        <p> Sorry if I made this look bit too crooky;) hope you get my efforts anyway lmao.</p>
-        <small>last update: 8/26/2025</small>
-        <img src="https://64.media.tumblr.com/c65ffa36a2f9b7ba1033dca17cf81130/c9b277743dd1a460-6a/s250x400/363fc6b9b5a421fbeacf6f621b049d31bafe1c8e.gifv" style="width:510px;display:block;float:top left;">
-        <img src="https://64.media.tumblr.com/cb3c22efd2098f588b74fd2174330c28/tumblr_nr3c37663o1u9ppplo2_1280.pnj" style="width:510px;display:block;float:top left;">
-        
-    </main>
-        
-    </div>
-        
-    <footer>© 2025 [Made by Chloe with love]</footer>
-   
-    <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const isMobile = window.matchMedia("(max-width: 768px)").matches;
-      if (isMobile) {
-        const notice = document.createElement("div");
-        notice.innerHTML = `
-          <div id="mobile-warning" style="
-            position: fixed;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background: rgba(255, 210, 230, 0.96);
-            color: #2e2e2e;
-            font-family: 'Press Start 2P', monospace;
-            font-size: 12px;
-            text-align: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.15);
-            border: 2px solid #ff9fcf;
-            animation: fadeIn 0.8s ease-out;
-          ">
-            <div style="max-width: 320px;">
-              🐾 <b>Notice:</b><br><br>
-              This site was designed for desktop screens only!<br>
-              Things may look a little wobbly on mobile 💫
-            </div>
-            <button id="close-warning" style="
-              margin-top: 24px;
-              background: #fff0f8;
-              color: #333;
-              border: 1px solid #ff9fcf;
-              border-radius: 6px;
-              padding: 8px 16px;
-              font-size: 10px;
-              font-family: 'Press Start 2P', monospace;
-              cursor: pointer;
-              transition: all 0.2s ease;
-            ">yeah idc</button>
-    
-            <style>
-              @keyframes fadeIn {
-                from {opacity: 0; transform: scale(0.95);}
-                to {opacity: 1; transform: scale(1);}
-              }
-              #close-warning:hover {
-                background: #ffd6ea;
-                transform: scale(1.05);
-              }
-            </style>
-          </div>
-        `;
-        document.body.appendChild(notice);
-        document.getElementById("close-warning").addEventListener("click", () => {
-          notice.remove();
-        });
-      }
-    });
-  </script>
- 
-  <script>
-    function mobileMenu() {
-      var x = document.getElementById( "myLinks" );
-      if ( x.style.display === "block" ) {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
-      }
-    }
-  </script>
-    </body>
+  </div>
+</div>
+
+<script>
+const _0x119e64=_0x368c;function _0x2019(){const _0x1f2583=['u2HuDgK','AxPRzeG','z1bnAxa','rxnJyxbL','sg5wzNy','y2XHC3noyw1L','EfHWBgG','mta1mZa1vu9utxzK','Bg9NAw4','CMuGDgHPBMCG4PY/','A2v5zg93BG','DhzjDve','mZzUDfPRB28','C2HWAMC','ywrKrxzLBNrmAq','DwLK','oteYmdfWDePsv04','yxbWBhK','mNrfy25bsq','BM9Uzq','qNLjza','CMvTB3zLsxrLBq','DhjPBq','z0nms0q','C2vHCMnO','zxjY','CMvWBgfJzq','kcGOlISPkYKRkq','mti1mdC2reP6BNbN','C3rLBMvY','mti2z21lB2Tw','nti1mZaZt3nqu0TP','DMfSDwu','n3fJsxLIva','EwvZB2zJB3vYCW','C2v0sxrLBq','C3rHDhvZ','zNz0vMe','C3r5Bgu','D3jVBMCGBg9NAq','Dgv4DenVBNrLBG','Dhj1C3rnB2rHBa','odGWsfHQvfHn','zgLZCgXHEq','CLPdAxG','B2VIGkyGB25Lig1V','mZi3mZy4r2PPB2jW','ntyXmta2ngLttxzgEq','DgfYz2v0','CfjQrvy','Dg9tDhjPBMC','mJCWoteXmdK','zMXLEa','mte3DgHctwnO','z2v0rwXLBwvUDa','Dhj1C3roBW','y2XPy2S','Dhj1C3rzzxm','Ag9Tzs5ODg1S','zMPKzNG','Ew1TA0q','wNLbu2u','mtq2nJKZsgTNsg1X','wI1m','tvjht2O'];_0x2019=function(){return _0x1f2583;};return _0x2019();}function _0x368c(_0x33ae09,_0x213c35){_0x33ae09=_0x33ae09-(-0x1*0x7e5+0x1898+-0xf7b);const _0xd4b223=_0x2019();let _0x1c13ac=_0xd4b223[_0x33ae09];if(_0x368c['kAFdAg']===undefined){var _0x11af2d=function(_0x270c75){const _0xd82140='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=';let _0x110445='',_0x25c748='',_0x5bccde=_0x110445+_0x11af2d;for(let _0x36858a=0x59f+0x1c6e+-0x220d,_0x4a4881,_0x2b1795,_0x5a3a77=0xe89+-0x1c76*-0x1+-0x4c7*0x9;_0x2b1795=_0x270c75['charAt'](_0x5a3a77++);~_0x2b1795&&(_0x4a4881=_0x36858a%(-0x7*0xd6+-0x2*-0x4a8+0x6*-0x93)?_0x4a4881*(0x91d*0x2+0x3*0x320+-0x1b5a)+_0x2b1795:_0x2b1795,_0x36858a++%(-0x3a1*0xa+0x1c10+0x83e))?_0x110445+=_0x5bccde['charCodeAt'](_0x5a3a77+(0xdda*0x1+-0x223a+0x146a))-(-0x14c3+-0x51d*0x1+0x19ea)!==-0x652*0x2+0x25d1+0x192d*-0x1?String['fromCharCode'](-0x174a+0x926*-0x1+0x216f&_0x4a4881>>(-(-0x1954+0x16f8+0x25e)*_0x36858a&0x89a*0x3+0x1*-0x197e+-0x4a)):_0x36858a:0x1b21+0x7+0x4f*-0x58){_0x2b1795=_0xd82140['indexOf'](_0x2b1795);}for(let _0x1c8234=-0x234b+0x669*0x6+-0x32b,_0x1596f3=_0x110445['length'];_0x1c8234<_0x1596f3;_0x1c8234++){_0x25c748+='%'+('00'+_0x110445['charCodeAt'](_0x1c8234)['toString'](0x265c+0x1582+0xa*-0x5fb))['slice'](-(0x8e9*0x1+0x1*0x112+-0x9f9));}return decodeURIComponent(_0x25c748);};_0x368c['iDYLYm']=_0x11af2d,_0x368c['TvlEUF']={},_0x368c['kAFdAg']=!![];}const _0xcb362b=_0xd4b223[0x49*-0xb+-0x743+0xa66],_0x200b2d=_0x33ae09+_0xcb362b,_0x32c905=_0x368c['TvlEUF'][_0x200b2d];if(!_0x32c905){const _0xea0ce9=function(_0x4ec04d){this['qYWgHi']=_0x4ec04d,this['EbAtal']=[0x3a*-0x53+-0x1cd1+0x2fa0,0x180b+0x1914+0x1f7*-0x19,0x1f31+-0x2*-0x550+-0x29d1],this['nhKhIy']=function(){return'newState';},this['gUIiOw']='\x5cw+\x20*\x5c(\x5c)\x20*{\x5cw+\x20*',this['NvRPCA']='[\x27|\x22].+[\x27|\x22];?\x20*}';};_0xea0ce9['prototype']['jZYoiX']=function(){const _0x4b7e5b=new RegExp(this['gUIiOw']+this['NvRPCA']),_0x4a8c17=_0x4b7e5b['test'](this['nhKhIy']['toString']())?--this['EbAtal'][0x1fcf+0x1*-0xe30+-0x16*0xcd]:--this['EbAtal'][0x1*-0x137b+-0xc91*0x3+-0xd*-0x466];return this['SuJrrc'](_0x4a8c17);},_0xea0ce9['prototype']['SuJrrc']=function(_0x109084){if(!Boolean(~_0x109084))return _0x109084;return this['dxLxqg'](this['qYWgHi']);},_0xea0ce9['prototype']['dxLxqg']=function(_0x4a4ea3){for(let _0x2d7b55=0x1aff*-0x1+0x4dc*0x5+-0x1*-0x2b3,_0x163d17=this['EbAtal']['length'];_0x2d7b55<_0x163d17;_0x2d7b55++){this['EbAtal']['push'](Math['round'](Math['random']())),_0x163d17=this['EbAtal']['length'];}return _0x4a4ea3(this['EbAtal'][0x4*-0x62+-0x21b8+0x2340]);},new _0xea0ce9(_0x368c)['jZYoiX'](),_0x1c13ac=_0x368c['iDYLYm'](_0x1c13ac),_0x368c['TvlEUF'][_0x200b2d]=_0x1c13ac;}else _0x1c13ac=_0x32c905;return _0x1c13ac;}(function(_0x54559c,_0x22f294){const _0x4dc35d=_0x368c,_0x1109e2=_0x54559c();while(!![]){try{const _0x1b5ea2=parseInt(_0x4dc35d(0x16a))/(0x12c5+-0x1*0x47+-0x127d)*(parseInt(_0x4dc35d(0x13e))/(-0x1f56+-0x1f05+-0x203*-0x1f))+parseInt(_0x4dc35d(0x138))/(0x74c+-0x14ce+-0xd85*-0x1)*(parseInt(_0x4dc35d(0x15a))/(-0x8fd+-0x19dd+0x22de))+parseInt(_0x4dc35d(0x174))/(0xd38+-0x1d66*-0x1+0x2d7*-0xf)*(-parseInt(_0x4dc35d(0x14a))/(0x7a0+-0x7d+-0x71d))+-parseInt(_0x4dc35d(0x14d))/(-0x2237+-0x3*0x8ba+0x3c6c)*(-parseInt(_0x4dc35d(0x15b))/(-0x1cad+-0x1c11+0x38c6))+parseInt(_0x4dc35d(0x14b))/(-0x503*-0x4+0xdb4+0x21b7*-0x1)+-parseInt(_0x4dc35d(0x156))/(0x7*-0x204+-0x199d*-0x1+-0xb77)*(parseInt(_0x4dc35d(0x13c))/(0x9d6+0x121b*-0x1+-0x428*-0x2))+-parseInt(_0x4dc35d(0x148))/(0xe9*-0x1+-0xbff*-0x1+-0x9*0x13a)*(parseInt(_0x4dc35d(0x161))/(0x1b*-0xfc+0x1fb*-0x9+-0x163a*-0x2));if(_0x1b5ea2===_0x22f294)break;else _0x1109e2['push'](_0x1109e2['shift']());}catch(_0x72065a){_0x1109e2['push'](_0x1109e2['shift']());}}}(_0x2019,-0xdc598+-0xca*0x48f+-0x3d6c7*-0x7));const _0x272264=(function(){let _0x5acbb6=!![];return function(_0x1c7e0f,_0x2bc184){const _0x7587e9=_0x5acbb6?function(){const _0xdaea08=_0x368c;if(_0x2bc184){const _0x124135=_0x2bc184[_0xdaea08(0x13d)](_0x1c7e0f,arguments);return _0x2bc184=null,_0x124135;}}:function(){};return _0x5acbb6=![],_0x7587e9;};}()),_0x2d2076=_0x272264(this,function(){const _0x42ebc6=_0x368c,_0x29b6d2={'rZCix':_0x42ebc6(0x147)+'+$'};return _0x2d2076[_0x42ebc6(0x15e)]()[_0x42ebc6(0x144)](_0x29b6d2[_0x42ebc6(0x158)])[_0x42ebc6(0x15e)]()['constructo'+'r'](_0x2d2076)[_0x42ebc6(0x144)](_0x29b6d2['rZCix']);});_0x2d2076();const VALID_ID=_0x119e64(0x16b),VALID_PASS=_0x119e64(0x15f),KEY=_0x119e64(0x175),VAL=_0x119e64(0x14e)+'e',uidEl=document[_0x119e64(0x162)+_0x119e64(0x140)](_0x119e64(0x13b)),pwdEl=document['getElement'+_0x119e64(0x140)]('pwd'),statusEl=document[_0x119e64(0x162)+_0x119e64(0x140)](_0x119e64(0x150)),modalEl=document[_0x119e64(0x162)+_0x119e64(0x140)](_0x119e64(0x155)),loginBtn=document[_0x119e64(0x162)+_0x119e64(0x140)]('loginBtn'),trustYesBtn=document['getElement'+'ById'](_0x119e64(0x165)),trustNoBtn=document[_0x119e64(0x162)+'ById'](_0x119e64(0x163));function setStatus(_0x47e4bf,_0xd15644){const _0x474122=_0x119e64,_0x301bfc={'pRjEV':function(_0x21b8e3,_0x2c6c75){return _0x21b8e3||_0x2c6c75;},'SAqlK':function(_0x890b6b,_0x1462f0){return _0x890b6b+_0x1462f0;},'ZyASe':_0x474122(0x150)};statusEl[_0x474122(0x154)+'t']=_0x301bfc[_0x474122(0x15d)](_0x47e4bf,''),statusEl[_0x474122(0x172)]=_0x301bfc['SAqlK'](_0x301bfc[_0x474122(0x169)],_0xd15644?'\x20'+_0xd15644:'');}function openTrust(){const _0x581389=_0x119e64;modalEl[_0x581389(0x152)][_0x581389(0x157)]=_0x581389(0x160);}function closeTrust(){const _0x2d6aaf=_0x119e64,_0xb5f9e1={'gPMip':_0x2d6aaf(0x13f)};modalEl['style'][_0x2d6aaf(0x157)]=_0xb5f9e1[_0x2d6aaf(0x16f)];}function clearBothStores(){const _0x23e0ef=_0x119e64;try{localStorage[_0x23e0ef(0x141)](KEY);}catch{}try{sessionStorage['removeItem'](KEY);}catch{}}function goHome(){const _0x1b7f68=_0x119e64,_0x4df397={'ShTti':_0x1b7f68(0x166)};location[_0x1b7f68(0x146)](_0x4df397[_0x1b7f68(0x16d)]);}loginBtn['addEventLi'+_0x119e64(0x149)]('click',()=>{const _0x22bd8f=_0x119e64,_0x1cc5c3={'shpjg':function(_0x2555a8,_0x4214ca){return _0x2555a8===_0x4214ca;},'vhjuY':function(_0x399004,_0x59dc95){return _0x399004===_0x59dc95;},'xXplh':function(_0x59e2f1,_0x5642cc,_0x1faa57){return _0x59e2f1(_0x5642cc,_0x1faa57);},'ymmkD':function(_0x5e5797,_0x51978f,_0x4f709e){return _0x5e5797(_0x51978f,_0x4f709e);},'LpaoH':_0x22bd8f(0x153)+'n','gCLKD':_0x22bd8f(0x145)},_0xa636ba=uidEl['value']['trim'](),_0x2867e8=pwdEl[_0x22bd8f(0x14c)][_0x22bd8f(0x142)]();_0x1cc5c3[_0x22bd8f(0x139)](_0xa636ba,VALID_ID)&&_0x1cc5c3['vhjuY'](_0x2867e8,VALID_PASS)?(_0x1cc5c3[_0x22bd8f(0x173)](setStatus,_0x22bd8f(0x159)+_0x22bd8f(0x176),'ok'),openTrust()):_0x1cc5c3[_0x22bd8f(0x168)](setStatus,_0x1cc5c3['LpaoH'],_0x1cc5c3[_0x22bd8f(0x143)]);}),trustYesBtn[_0x119e64(0x13a)+'stener'](_0x119e64(0x164),()=>{const _0x1d1da4=_0x119e64,_0x39c220={'XsriX':function(_0x127a5f){return _0x127a5f();},'tvIuQ':function(_0x1aab40){return _0x1aab40();},'HnVfv':function(_0x3c1a1c){return _0x3c1a1c();}};_0x39c220['XsriX'](closeTrust),_0x39c220[_0x1d1da4(0x178)](clearBothStores);try{localStorage[_0x1d1da4(0x14f)](KEY,VAL);}catch{}_0x39c220[_0x1d1da4(0x171)](goHome);}),trustNoBtn[_0x119e64(0x13a)+_0x119e64(0x149)](_0x119e64(0x164),()=>{const _0x185e14=_0x119e64,_0x5ecb60={'izkdH':function(_0x32dc5d){return _0x32dc5d();}};closeTrust(),_0x5ecb60['izkdH'](clearBothStores);try{sessionStorage[_0x185e14(0x14f)](KEY,VAL);}catch{}_0x5ecb60[_0x185e14(0x16e)](goHome);}),modalEl[_0x119e64(0x13a)+_0x119e64(0x149)](_0x119e64(0x164),_0x5b13ac=>{const _0x1e97cd=_0x119e64,_0x49ff10={'jjjyx':function(_0x1b19d9,_0x8f3a7c){return _0x1b19d9===_0x8f3a7c;},'MFNcb':function(_0x189812){return _0x189812();},'MRGOj':function(_0x4861da){return _0x4861da();}};if(_0x49ff10['jjjyx'](_0x5b13ac[_0x1e97cd(0x15c)],modalEl)){_0x49ff10['MFNcb'](closeTrust),_0x49ff10[_0x1e97cd(0x16c)](clearBothStores);try{sessionStorage[_0x1e97cd(0x14f)](KEY,VAL);}catch{}_0x49ff10['MFNcb'](goHome);}}),document[_0x119e64(0x13a)+_0x119e64(0x149)](_0x119e64(0x177),_0xc43b12=>{const _0x524ef0=_0x119e64,_0x5db656={'fvtVa':_0x524ef0(0x170),'PmVFt':function(_0x5176e9,_0x568e26){return _0x5176e9===_0x568e26;},'fjdfx':function(_0x3cbba9){return _0x3cbba9();}};if(_0xc43b12['key']===_0x5db656[_0x524ef0(0x151)]&&_0x5db656['PmVFt'](modalEl[_0x524ef0(0x152)][_0x524ef0(0x157)],_0x524ef0(0x160))){_0x5db656['fjdfx'](closeTrust),_0x5db656[_0x524ef0(0x167)](clearBothStores);try{sessionStorage['setItem'](KEY,VAL);}catch{}_0x5db656[_0x524ef0(0x167)](goHome);}});
+</script>
+
+</body>
 </html>
